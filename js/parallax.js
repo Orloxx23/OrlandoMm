@@ -15,10 +15,10 @@ document.addEventListener('mousemove', function (e) {
 
 window.addEventListener('deviceorientation',function(e){
     console.log("ok");
-    const x = (e.alpha * -1);
-    const y = (e.beta * -1);
-    var mx = (e.alpha * -1);
-    var my = (e.beta * -1);
+    const x = (e.alpha);
+    const y = (e.beta);
+    var mx = (e.alpha);
+    var my = (e.beta);
     
     document.querySelectorAll('#layer').forEach(layer => {
         layer.style.transform = `translateX(${x}px) translateY(${y}px)`
