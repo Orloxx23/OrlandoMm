@@ -1,0 +1,69 @@
+.circle-bg{
+    position: fixed;
+    width: 100em;
+    height: 100em;
+    background: radial-gradient(#62008F 1%, transparent 70%);
+    /* background: #62008F; */
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.coverpage-line{
+    position: absolute;
+    width: 70%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 0;
+}
+
+.circle1{
+    position: fixed;
+    left: 30%;
+    top: 60%;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius:500px;
+	background-color:#62008F;
+	width:94px;
+	height:94px;
+}
+
+.circle2{
+    position: fixed;
+    left: 62%;
+    top: 45%;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius:500px;
+	background-color:#62008F;
+	width:48px;
+	height:48px;
+}
+
+.square{
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	transform: rotate(18.68460275560642deg);
+	background-color:#62008F;
+	width: 80px;
+	height: 80px;
+}
+
+.triangle {
+    position: fixed;
+    left: 64%;
+    top: 60%;
+    width: 0; 
+    height: 0; 
+    border-left: 150px solid #62008F;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent; 
+    transform: rotate(-40deg);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+@media (max-width: 768px){
+    .coverpage-line{
+        position: fixed;
+        width: 100%;
+    }
+}
