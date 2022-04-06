@@ -12,3 +12,18 @@ document.addEventListener('mousemove', function (e) {
 
     mainLayer.style.transform = `translateX(${mx}px) translateY(${my}px)`
 });
+
+document.addEventListener('deviceorientation',function(e){
+    console.log("ok");
+    const x = (e.beta * -1 / 30);
+    const y = (e.gamma * -1 / 30);
+    var mx = (e.beta * -1 / 100);
+    var my = (e.gamma * -1 / 100);
+
+    this.querySelectorAll('#layer').forEach(layer => {
+        layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+    })
+
+    mainLayer.style.transform = `translateX(${mx}px) translateY(${my}px)`
+
+});
