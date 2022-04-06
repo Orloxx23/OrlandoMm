@@ -1,22 +1,22 @@
 .circle-bg{
-    position: fixed;
+    position: absolute;
     width: 100em;
     height: 100em;
-    background: radial-gradient(#62008F 1%, transparent 70%);
+    background: radial-gradient(#62008f7c 1%, transparent 70%);
     /* background: #62008F; */
     border-radius: 50%;
-    z-index: 0;
+    z-index: 1;
 }
 
 .coverpage-line{
     position: absolute;
-    width: 70%;
+    width: 100%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     z-index: 0;
 }
 
 .circle1{
-    position: fixed;
+    position: absolute;
     left: 30%;
     top: 60%;
     box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -24,10 +24,11 @@
 	background-color:#62008F;
 	width:94px;
 	height:94px;
+    transition: .10s;
 }
 
 .circle2{
-    position: fixed;
+    position: absolute;
     left: 62%;
     top: 45%;
     box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -35,6 +36,7 @@
 	background-color:#62008F;
 	width:48px;
 	height:48px;
+    transition: .20s;
 }
 
 .square{
@@ -46,10 +48,11 @@
 	background-color:#62008F;
 	width: 80px;
 	height: 80px;
+    transition: .30s;
 }
 
 .triangle {
-    position: fixed;
+    position: absolute;
     left: 64%;
     top: 60%;
     width: 0; 
@@ -61,9 +64,8 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px){ 
     .coverpage-line{
-        position: fixed;
         width: 100%;
     }
 }
