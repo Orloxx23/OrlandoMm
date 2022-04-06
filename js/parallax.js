@@ -15,9 +15,9 @@ document.addEventListener('mousemove', function (e) {
 
 window.addEventListener('deviceorientation',function(e){
     console.log("ok");
-    const x = (e.alpha);
+    const x = (e.gamma);
     const y = (e.beta);
-    var mx = (e.alpha);
+    var mx = (e.gamma);
     var my = (e.beta);
     
     document.querySelectorAll('#layer').forEach(layer => {
