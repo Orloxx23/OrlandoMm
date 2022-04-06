@@ -13,7 +13,7 @@ document.addEventListener('mousemove', function (e) {
     mainLayer.style.transform = `translateX(${mx}px) translateY(${my}px)`
 });
 
-document.addEventListener('deviceorientation',function(e){
+window.addEventListener('deviceorientation',function(e){
     console.log("ok");
     const x = (e.beta * -1 / 30);
     const y = (e.gamma * -1 / 30);
