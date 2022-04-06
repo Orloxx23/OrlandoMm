@@ -45,7 +45,8 @@
   justify-content: space-around;
   align-items: center;
 
-  transition: all .3s;
+  transition: .3s;
+  z-index: 1;
 }
 
 .nav a{
@@ -61,5 +62,9 @@
 @media (max-width: 768px) {
   .coverpage-logo {
     width: 20rem;
+  }
+
+  .nav{
+    display: none;
   }
 }
