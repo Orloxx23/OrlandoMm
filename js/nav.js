@@ -10,10 +10,8 @@ tabs.forEach(clickedTab =>{
 });
 
 const observer = new IntersectionObserver((entries) => {
-    console.log("Observer");
     entries.forEach(entry => {
         const id = entry.target.getAttribute('id');
-        console.log(id);
         const menuLink = document.querySelector(`.nav a[href="#${id}"]`);
 
         if(entry.isIntersecting){
@@ -27,7 +25,6 @@ const menuLinks = document.querySelectorAll('.nav a[href^="#"]');
 
 menuLinks.forEach((menuLink) => {
     const hash = menuLink.getAttribute('href');
-    console.log("hash: " + hash);
     const target = document.querySelector(hash);
     if(target){
         observer.observe(target);

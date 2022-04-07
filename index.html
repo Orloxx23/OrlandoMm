@@ -16,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -27,13 +30,15 @@
         <a href="" class="hvr-bob tab"><i class="fa-solid fa-address-card"></i></a>
     </div>
     <div class="coverpage parallax" id="inicio">
-        <div class="circle-bg" id="main-layer"></div>
+        <div class="circle-bg" id="layer"></div>
         <div class="circle1" id="layer"></div>
         <div class="circle2" id="layer"></div>
         <div class="square" id="layer"></div>
         <div class="triangle" id="layer"></div>
         <img src="./img/line.png" alt="line" class="coverpage-line" id="layer">
-        <img src="./img/logo.png" alt="OrlandoMm" class="coverpage-logo" id="main-layer">
+        <div class="z1" data-aos="zoom-in" data-aos-anchor-placement="top-center">
+            <img src="./img/logo.png" alt="OrlandoMm" class="coverpage-logo" id="main-layer">
+        </div>
     </div>
     <div class="portafolio" id="portafolio">
         <div class="smooth-wrapper">
@@ -89,46 +94,16 @@
         <div class="spacer"></div>
     </div>
     <div class="skills" id="skills">
-        <h1>HABILIDADES</h1>
-        <div class="skills-container">
-            <div class="card">
-                <div class="card-header">
-                    <i class="fa-brands fa-html5"></i>
-                </div>
-                <div class="card-text">
-                    <p>HTML</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <i class="fa-brands fa-css3-alt"></i>
-                </div>
-                <div class="card-text">
-                    <p>CSS</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <i class="fa-brands fa-js"></i>
-                </div>
-                <div class="card-text">
-                    <p>Javascript</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <i class="fa-brands fa-react"></i>
-                </div>
-                <div class="card-text">
-                    <p>React</p>
-                </div>
-            </div>
-        </div>
+
     </div>
 
     <script src="./js/parallax.js"></script>
     <script src="./js/animations.js"></script>
     <script src="./js/nav.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+//AOS.init();
 gsap.registerPlugin(ScrollTrigger);
 
 let paths = gsap.utils.toArray("#logo-scroll path, #logo-smoother path, #logo-mouse");
