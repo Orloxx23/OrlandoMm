@@ -282,6 +282,10 @@
   font-family: 'Amatic SC', cursive;
 }
 
+.mobile-tab{
+  color: #620090;
+}
+
 @media (max-width: 768px) {
   .coverpage-logo {
     width: 20rem;
