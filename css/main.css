@@ -59,6 +59,10 @@
   color: #ae00ff;
 }
 
+.nav i:active {
+  color: #ae00ff;
+}
+
 .nav i {
   font-size: 30px;
   cursor: pointer;
@@ -204,6 +208,80 @@
   background: #232323;
 }
 
+.nav-mobile-button{
+  position: fixed;
+  background: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius:50%;
+  bottom: 0;
+  z-index: 5;
+  right: 0;
+  margin: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-mobile{
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  height: 20vh;
+  bottom: -200px;
+  z-index: 20;
+  border-radius: 20px 20px 0 0;
+  transition: .5s;
+  display: none;
+}
+
+.nav-open{
+  transform: translateY(-200px);
+  transition: .5s;
+}
+
+.overlay{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.782);
+  z-index: 4;
+  transition: 1s;
+}
+
+.hidden{
+  transition: .5s;
+  display: none;
+}
+
+.close-nav{
+  position: fixed;
+  right: 0;
+  margin: 15px 20px 0 0;
+  font-size: 20px;
+  z-index: 5;
+}
+
+.nav-items{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-items i{
+  margin-top: 30px;
+  font-size: 3rem;
+}
+
+.nav-mobile p{
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: 'Amatic SC', cursive;
+}
+
 @media (max-width: 768px) {
   .coverpage-logo {
     width: 20rem;
@@ -211,6 +289,14 @@
 
   .nav {
     display: none;
+  }
+
+  .nav-mobile-button{
+    display: flex;
+  }
+
+  .nav-mobile{
+    display: block;
   }
 
   .skills {

@@ -30,3 +30,28 @@ menuLinks.forEach((menuLink) => {
         observer.observe(target);
     }
 })
+
+const button = document.querySelector('.nav-mobile-button');
+const menu = document.querySelector('.nav-mobile');
+const overlay = document.querySelector('.overlay');
+const closenav = document.querySelector('.close-nav');
+
+function showMenu(){
+    menu.classList.add('nav-open');
+    overlay.classList.remove('hidden');
+}
+
+function hideMenu(){
+    menu.classList.remove('nav-open');
+    overlay.classList.add('hidden');
+}
+
+const mobileTabs = document.querySelectorAll('.mobile-tab');
+
+mobileTabs.forEach((tab) => {
+    tab.addEventListener('click', hideMenu);
+})
+
+button.addEventListener('click', showMenu);
+overlay.addEventListener('click', hideMenu);
+closenav.addEventListener('click', hideMenu);
