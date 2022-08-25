@@ -1,57 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#62008F" media="(prefers-color-scheme: dark)" />
-    <meta name="theme-color" content="#62008F" media="(prefers-color-scheme: light)" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="theme-color"
+      content="#62008F"
+      media="(prefers-color-scheme: dark)"
+    />
+    <meta
+      name="theme-color"
+      content="#62008F"
+      media="(prefers-color-scheme: light)"
+    />
     <!-- <link rel="icon" type="image/x-icon" href="./img/favicon.ico"> -->
     <title>Orloxx</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/figures.css">
-    <link rel="stylesheet" href="./css/animations.css">
-    <link rel="stylesheet" href="./css/grid.css">
-    <link rel="stylesheet" href="./css/timeline.css">
-    <script src="https://kit.fontawesome.com/00a734f883.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/figures.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="./css/grid.css" />
+    <link rel="stylesheet" href="./css/timeline.css" />
+    <script
+      src="https://kit.fontawesome.com/00a734f883.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400;500;600;700&family=Great+Vibes&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400;500;600;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="nav">
-        <a href="#home" class="hvr-bob active tab"><i class="fa-solid fa-house"></i></a>
-        <a href="#portfolio" class="hvr-bob tab"><i class="fa-solid fa-suitcase"></i></a>
-        <!--<a href="#skills" class="hvr-bob tab"><i class="fa-solid fa-brain"></i></a>
+      <a href="#home" class="hvr-bob active tab"
+        ><i class="fa-solid fa-house"></i
+      ></a>
+      <a href="#portfolio" class="hvr-bob tab"
+        ><i class="fa-solid fa-suitcase"></i
+      ></a>
+      <!--<a href="#skills" class="hvr-bob tab"><i class="fa-solid fa-brain"></i></a>
         <a href="#education" class="hvr-bob tab"><i class="fa-solid fa-graduation-cap"></i></a>
         <a href="" class="hvr-bob tab"><i class="fa-solid fa-address-card"></i></a> -->
     </div>
     <div class="nav-mobile-button">
-        <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-bars"></i>
     </div>
     <div class="nav-mobile">
-        <i class="fa-solid fa-xmark close-nav"></i>
-        <div class="nav-items">
-            <div class="item">
-                <a href="#home" class="mobile-tab"><i class="fa-solid fa-house"></i></a>
-                <p>HOME</p>
-            </div>
-            <div class="item">
-                <a href="#portfolio" class="mobile-tab"><i class="fa-solid fa-suitcase"></i></a>
-                <p>PORTFOLIO</p>
-            </div>
-            <!-- <div class="item">
+      <i class="fa-solid fa-xmark close-nav"></i>
+      <div class="nav-items">
+        <div class="item">
+          <a href="#home" class="mobile-tab"
+            ><i class="fa-solid fa-house"></i
+          ></a>
+          <p>HOME</p>
+        </div>
+        <div class="item">
+          <a href="#portfolio" class="mobile-tab"
+            ><i class="fa-solid fa-suitcase"></i
+          ></a>
+          <p>PORTFOLIO</p>
+        </div>
+        <!-- <div class="item">
                 <a href="#skills" class="mobile-tab"><i class="fa-solid fa-brain"></i></a>
                 <p>SKILLS</p>
             </div>
@@ -63,136 +83,82 @@
                 <a href="" class="mobile-tab"><i class="fa-solid fa-address-card"></i></a>
                 <p>CONTACT</p>
             </div> -->
-        </div>
+      </div>
     </div>
     <div class="overlay hidden">a</div>
     <div class="coverpage parallax" id="home">
-        <div class="particles-js" id="particles-js"></div>
-        <div class="circle-bg" id="main-layer"></div>
-        <div class="circle1" id="layer"></div>
-        <div class="circle2" id="layer"></div>
-        <div class="square" id="layer"></div>
-        <div class="triangle" id="layer"></div>
-        <img src="./img/line.png" alt="line" class="coverpage-line" id="layer">
-        <div class="z1" data-aos="zoom-in" data-aos-anchor-placement="top-center">
-            <img src="./img/me/me1.png" alt="OrlandoMm" class="coverpage-logo" id="main-layer">
-        </div>
-        <div class="coverpage-text">
-            <h1>OrlandoMm</h1>
-            <h3>Junior web developer</h3>
-        </div>
+      <div class="particles-js" id="particles-js"></div>
+      <div class="circle-bg" id="main-layer"></div>
+      <div class="circle1" id="layer"></div>
+      <div class="circle2" id="layer"></div>
+      <div class="square" id="layer"></div>
+      <div class="triangle" id="layer"></div>
+      <img src="./img/line.png" alt="line" class="coverpage-line" id="layer" />
+      <div class="z1" data-aos="zoom-in" data-aos-anchor-placement="top-center">
+        <img
+          src="./img/me/me1.png"
+          alt="OrlandoMm"
+          class="coverpage-logo"
+          id="main-layer"
+        />
+      </div>
+      <div class="coverpage-text">
+        <h1>OrlandoMm</h1>
+        <h3>Junior web developer</h3>
+      </div>
     </div>
-    <div class="portafolio" id="portfolio">
-        <div class="smooth-wrapper">
-            <div class="smooth-content">
-                <div class="grid-section">
-                    <div class="grid-layout">
-                        <div class="column column-1" data-speed="1.1">
-                            <div class="column-content">
-                                <div class="grid-image">
-                                    <img src="./img/bg-purple-left.png" alt="|">
-                                </div>
-                                <div class="grid-image">
-                                    <div class="image-area">
-                                        <div class="img-wrapper">
-                                            <img src="./img/Captura1.PNG">
-                                            <ul>
-                                                <li><a href="https://github.com/Orloxx23/MinTIC-Ventas-Frontend"
-                                                        target="_blank"><i class="fab fa-github"></i></a></li>
-                                                <li><a href="https://mintic-ventas.herokuapp.com" target="_blank"><i
-                                                            class="fa-solid fa-link"></i></i></a></li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-image">
-                                    <div class="image-area">
-                                        <div class="img-wrapper">
-                                            <img src="./img/Captura4.PNG">
-                                            <ul>
-                                                <li><a href="https://github.com/Orloxx23/Conflicto-Colombia"
-                                                        target="_blank"><i class="fab fa-github"></i></a></li>
-                                                <li><a href="https://orloxx23.github.io/Conflicto-Colombia/"
-                                                        target="_blank"><i class="fa-solid fa-link"></i></i></a></li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column column-2" data-speed="1.01">
-                            <div class="column-content">
-                                <div class="grid-image">
-                                    <img src="./img/bg-purple-center.png" alt="">
-                                    <div class="grid-content">
-                                        <h1>Portfolio</h1>
-                                    </div>
-                                </div>
-                                <div class="grid-image">
-                                    <div class="image-area">
-                                        <div class="img-wrapper">
-                                            <img src="./img/Captura2.PNG">
-                                            <ul>
-                                                <li><a href="https://github.com/Orloxx23/valorantfa-client"
-                                                    target="_blank"><i class="fab fa-github"></i></a></li>
-                                                <li><a href="https://valorantfa-client.vercel.app" target="_blank"><i
-                                                            class="fa-solid fa-link"></i></i></a></li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-image">
-                                    <img src="./img/CS.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column column-3" data-speed="1.1">
-                            <div class="column-content">
-                                <div class="grid-image">
-                                    <img src="./img/bg-purple-right.png" alt="|">
-                                </div>
-                                <div class="grid-image">
-                                    <div class="image-area">
-                                        <div class="img-wrapper">
-                                            <img src="./img/Captura5.PNG">
-                                            <ul>
-                                                <li><a href="https://github.com/Orloxx23/Votacion-Celo"
-                                                    target="_blank"><i class="fab fa-github"></i></a></li>
-                                                <li><a href="https://votacion-celo.vercel.app" target="_blank"><i
-                                                            class="fa-solid fa-link"></i></i></a></li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-image">
-                                    <img src="./img/CS.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="portfolio" id="portfolio">
+      <div class="portfolio-left">
+        <div class="portfolio-images">
+          <div class="portfolio-img">
+            <img src="./img/Captura3.PNG" alt="" />
+            <div class="img-bottons">
+              <a
+                href="https://github.com/Orloxx23/Votacion-Celo"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="http://votacion-celo.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
+          </div>
+
+          <div class="portfolio-img">
+            <img src="./img/Captura1.PNG" alt="" />
+            <div class="img-bottons">
+              <a
+                href="https://github.com/Orloxx23/MinTIC2022-Ciclo3"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://mintic-ventas.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
         </div>
-        <div class="spacer"></div>
+      </div>
+      <div class="portfolio-right">
+        <h1>Portfolio</h1>
+        <img src="./img/hand-up.png" alt="">
+      </div>
     </div>
-    <div id="particles-js"></div>
+
     <!-- <div class="skills" id="skills">
 
     </div> -->
 
     <script src="./js/parallax.js"></script>
-    <script src="./js/animations.js"></script>
     <script src="./js/nav.js"></script>
-    <script src="./js/particles.js"></script>
     <script src="./js/app.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-</body>
-
+  </body>
 </html>
