@@ -6,6 +6,11 @@
 
 body {
   background: #242424;
+  scroll-snap-type: y mandatory;
+}
+
+.section {
+  scroll-snap-align: center;
 }
 
 .coverpage {
@@ -365,7 +370,6 @@ body {
   font-family: "Amatic SC", cursive;
   color: white;
   font-size: 8rem;
-
 }
 
 .portfolio-right img {
@@ -390,7 +394,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   margin-left: 10rem;
 }
 
@@ -435,6 +439,276 @@ body {
 
 .img-bottons i:hover {
   font-size: 30px;
+}
+
+.off i {
+  color: #370051;
+  cursor: auto;
+}
+
+.off i:hover {
+  font-size: 20px;
+  transition: none;
+}
+
+/* Education */
+
+.education {
+  height: 100vh;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". .";
+}
+
+.education h1 {
+  font-size: 5rem;
+  margin: 8rem 0 2rem 8rem;
+  font-family: "Amatic SC", cursive;
+  color: white;
+}
+
+.portfolio hr {
+  display: none;
+}
+
+.education-card {
+  background: #62008f;
+  padding: 1rem;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 250px;
+  max-width: 100%;
+  margin-left: 8rem;
+  margin-bottom: 1.5rem;
+}
+
+.education-card-off {
+  background: #2f2f2f;
+  padding: 1rem;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 250px;
+  max-width: 100%;
+  margin-left: 8rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.5;
+}
+
+.date-box {
+  background: #3c3c3c;
+  height: 1.3rem;
+  border-radius: 25px;
+  width: 25%;
+  margin-bottom: 0.8rem;
+}
+
+.title-box {
+  background: #3c3c3c;
+  height: 3rem;
+  border-radius: 25px;
+  width: 80%;
+  margin-bottom: 0.8rem;
+}
+
+.school-box {
+  background: #3c3c3c;
+  height: 1.5rem;
+  border-radius: 25px;
+  width: 50%;
+  margin-bottom: 0.8rem;
+}
+
+.education-card-icon {
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.education-card-icon i {
+  font-size: 2rem;
+  color: #62008f;
+}
+
+.education-card-icon-off {
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.education-card-icon-off i {
+  font-size: 2rem;
+  color: #2f2f2f;
+}
+
+.education-card-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.education-card-body-off {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.education-date p {
+  font-size: 1.3rem;
+  color: rgb(199, 199, 199);
+  font-family: "Amatic SC", cursive;
+}
+
+.education-title p {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  font-family: "Amatic SC", cursive;
+}
+
+.education-school p {
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Amatic SC", cursive;
+}
+
+.education-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-right img {
+  width: 80%;
+}
+
+.achievements {
+  height: 100vh;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". .";
+}
+
+.achievements-left {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.achievements-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 9rem;
+}
+
+.achievements-right h1 {
+  font-size: 5rem;
+  margin: 8rem 0 2rem 8rem;
+  font-family: "Amatic SC", cursive;
+  color: white;
+}
+
+.achievements-collection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+}
+
+.achievements-card {
+  background: white;
+  min-width: 150px;
+  min-height: 150px;
+  border-radius: 25px;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.achievements-card-off {
+  background: #2f2f2f;
+  min-width: 150px;
+  min-height: 150px;
+  border-radius: 25px;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  opacity: 0.5;
+}
+
+.achievements-card-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.achievements-card-head-box {
+  width: 8rem;
+  height: 8rem;
+  background: #3c3c3c;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+}
+
+.achievements-card-head img {
+  width: 50%;
+}
+
+* {
+  font-family: "Amatic SC", cursive;
+}
+
+.achievements-card-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.achievements-card-title p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.achievements-card-title-box {
+  height: 1.5rem;
+  background: #3c3c3c;
+  width: 100%;
+  border-radius: 25px;
 }
 
 @media (max-width: 768px) {
@@ -519,7 +793,7 @@ body {
     border-radius: 25px;
     padding: 6px;
     box-shadow: #232323 1px 1px 10px;
-  
+
     height: 10%;
     width: 20%;
     display: flex;
@@ -532,6 +806,100 @@ body {
   }
 
   .portfolio-right img {
+    display: none;
+  }
+
+  .separation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .portfolio hr {
+    display: block;
+    width: 60%;
+    border-color: #ffffff19;
+  }
+
+  .education {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "."
+      ".";
+  }
+
+  .education h1 {
+    margin: 1rem 0;
+  }
+
+  .education-card {
+    margin-left: 0;
+  }
+
+  .education-card-off {
+    margin-left: 0;
+  }
+
+  .education-right {
+    display: none;
+  }
+
+  .education-right img {
+    display: none;
+  }
+
+  .achievements {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ".";
+  }
+
+  .achievements-left {
+    display: none;
+  }
+
+  .achievements-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 0;
+  }
+
+  .achievements-right h1 {
+    margin: 0;
+  }
+
+  .achievements-collection {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "."
+      "."
+      ".";
+  }
+
+  .achievements-card {
+    margin-bottom: 1rem;
+  }
+
+  .achievements-card-off {
+    margin-bottom: 1rem;
+  }
+
+  .mobile-hidden{
     display: none;
   }
 }
