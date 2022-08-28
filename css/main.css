@@ -711,6 +711,30 @@ body {
   border-radius: 25px;
 }
 
+.continue-arrow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateY(-4rem);
+}
+
+.continue-arrow i {
+  color: white;
+  font-size: 3rem;
+}
+
+@media (max-width: 720px) {
+  .achievements-card-head img {
+    width: 40%;
+  }
+
+  .continue-arrow i {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .coverpage-logo {
     width: 20rem;
@@ -899,7 +923,11 @@ body {
     margin-bottom: 1rem;
   }
 
-  .mobile-hidden{
+  .mobile-hidden {
     display: none;
+  }
+
+  .continue-arrow i {
+    font-size: 3rem;
   }
 }
