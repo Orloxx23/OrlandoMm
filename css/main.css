@@ -83,29 +83,6 @@ body {
   filter: drop-shadow(1px 1px 4px #ae00ff);
 }
 
-.skills {
-  width: 100%;
-  height: 100vh;
-  /* background: #888888; */
-
-  background-color: #242424;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23301c39' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%233c154e' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23490e64' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23550779' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%2362008F' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
-  /* background-attachment: fixed; */
-  background-size: cover;
-}
-
-.skills-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4vh;
-  margin-left: 4vw;
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 8vw 8vw;
-}
-
 .z1 {
   position: absolute;
   z-index: 1;
@@ -353,10 +330,12 @@ body {
 .portfolio {
   background: #242424;
   height: 100vh;
-  width: 80%;
+  min-height: 100vh;
+  max-height: 100vh;
+  width: 100%;
 
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas: ". .";
@@ -394,8 +373,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  margin-left: 10rem;
+  flex-direction: column;
 }
 
 .portfolio-images {
@@ -599,7 +577,6 @@ body {
 }
 
 .achievements {
-  height: 100vh;
   width: 100%;
 
   display: grid;
@@ -610,8 +587,6 @@ body {
 }
 
 .achievements-left {
-  width: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -626,7 +601,7 @@ body {
 
 .achievements-right h1 {
   font-size: 5rem;
-  margin: 8rem 0 2rem 8rem;
+  margin: 7rem 0 2rem 8rem;
   font-family: "Amatic SC", cursive;
   color: white;
 }
@@ -635,7 +610,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
+  gap: 1rem 1rem;
   grid-template-areas:
     ". . ."
     ". . ."
@@ -647,7 +622,6 @@ body {
   min-width: 150px;
   min-height: 150px;
   border-radius: 25px;
-  margin: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -718,6 +692,7 @@ body {
   align-items: center;
   position: absolute;
   transform: translateY(-4rem);
+  gap: 5rem;
 }
 
 .continue-arrow i {
@@ -725,13 +700,212 @@ body {
   font-size: 3rem;
 }
 
-@media (max-width: 720px) {
+.achievements-card-title p {
+  text-align: center;
+}
+
+.skills {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skills h1 {
+  color: white;
+  font-size: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.skills-collection {
+  width: 70%;
+  height: 80%;
+}
+
+.skills-card {
+  background: white;
+  max-width: 250px;
+  max-height: 250px;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.skills-card-head {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.skills-card-head img {
+  align-items: center;
+  width: 50%;
+  object-fit: cover;
+}
+
+.skills-card-title p {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.contact{
+  width: 100%;
+  height: 100vh;
+
+  display: grid; 
+  grid-template-columns: 1fr 2fr; 
+  grid-template-rows: 1fr; 
+  gap: 0em 0em; 
+  grid-template-areas: 
+    ". ."; 
+}
+
+.contact-left{
+  color: white;
+  padding: 50px 0 0 100px;
+}
+
+.contact-left h1{
+  font-size: 5rem;
+  margin-bottom: 5rem;
+}
+
+.contact-item{
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 1.5rem;
+  
+}
+
+.contact-item-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: #62008f;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.contact-item-icon:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #62008f;
+  color: white;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.contact-item p{
+  margin-left: 10px;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.contact-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-right img{
+  width: 70%;
+}
+
+.contact a{
+  color: white;
+  text-decoration: none;
+}
+
+.socials{
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.social-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: #62008f;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 50%;
+  transition: .3s;
+  margin-right: 10px;
+}
+
+.social-item:hover{
+  background: #62008f;
+  color: white;
+  font-size: 2rem;
+}
+
+@media (max-height: 720px) {
   .achievements-card-head img {
     width: 40%;
   }
 
   .continue-arrow i {
     font-size: 2rem;
+  }
+
+  .education h1 {
+    margin: 3rem 0 0 8rem;
+  }
+
+  .education-right img {
+    margin: 0;
+  }
+
+  .achievements-right h1 {
+    margin: 1.5rem 0 0rem 0;
+  }
+
+  .achievements-card {
+    background: white;
+    min-width: 80px;
+    min-height: 80px;
+    border-radius: 25px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .achievements-card-off {
+    background: #2f2f2f;
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 25px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 0.5;
   }
 }
 
@@ -762,34 +936,12 @@ body {
     display: block;
   }
 
-  .skills {
-    width: 100%;
-    height: auto;
-  }
-
-  .skills-container {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 20px 20px;
-    grid-template-areas:
-      "."
-      "."
-      "."
-      ".";
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-  }
   .card {
     position: relative;
     left: 50%;
     margin-left: -125px;
   }
+
   .portfolio {
     overflow: hidden;
     background: #242424;
@@ -823,10 +975,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
-
-  .portfolio-right {
-    margin-left: 0rem;
   }
 
   .portfolio-right img {
@@ -908,19 +1056,11 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
+    gap: 1rem 1rem;
     grid-template-areas:
       "."
       "."
       ".";
-  }
-
-  .achievements-card {
-    margin-bottom: 1rem;
-  }
-
-  .achievements-card-off {
-    margin-bottom: 1rem;
   }
 
   .mobile-hidden {
@@ -929,5 +1069,20 @@ body {
 
   .continue-arrow i {
     font-size: 3rem;
+  }
+
+  .contact-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .contact-item p{
+    font-size: 2rem;
+  }
+
+  .contact-right{
+    display: none;
   }
 }
