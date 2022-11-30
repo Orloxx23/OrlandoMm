@@ -599,11 +599,32 @@ body {
   padding-right: 9rem;
 }
 
+.achievements-right-title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
 .achievements-right h1 {
   font-size: 5rem;
-  margin: 7rem 0 2rem 8rem;
-  font-family: "Amatic SC", cursive;
+  margin: 7rem 0 2rem 2rem;
   color: white;
+}
+
+.achievements-right-title p {
+  font-size: 1.5rem;
+  margin: 7rem 0 2rem 8rem;
+  color: white;
+  cursor: pointer;
+}
+
+* {
+  font-family: "Amatic SC", cursive;
+}
+
+a {
+  text-decoration: none;
 }
 
 .achievements-collection {
@@ -659,7 +680,7 @@ body {
 }
 
 .achievements-card-head img {
-  width: 50%;
+  width: 40%;
 }
 
 * {
@@ -758,38 +779,36 @@ body {
   font-weight: bold;
 }
 
-.contact{
+.contact {
   width: 100%;
   height: 100vh;
 
-  display: grid; 
-  grid-template-columns: 1fr 2fr; 
-  grid-template-rows: 1fr; 
-  gap: 0em 0em; 
-  grid-template-areas: 
-    ". ."; 
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  gap: 0em 0em;
+  grid-template-areas: ". .";
 }
 
-.contact-left{
+.contact-left {
   color: white;
   padding: 50px 0 0 100px;
 }
 
-.contact-left h1{
+.contact-left h1 {
   font-size: 5rem;
   margin-bottom: 5rem;
 }
 
-.contact-item{
+.contact-item {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
   font-weight: 100;
   margin-bottom: 1.5rem;
-  
 }
 
-.contact-item-icon{
+.contact-item-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -801,7 +820,7 @@ body {
   border-radius: 50%;
 }
 
-.contact-item-icon:hover{
+.contact-item-icon:hover {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -813,34 +832,33 @@ body {
   border-radius: 50%;
 }
 
-.contact-item p{
+.contact-item p {
   margin-left: 10px;
   text-align: center;
   font-size: 2.5rem;
 }
 
-.contact-right{
+.contact-right {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contact-right img{
+.contact-right img {
   width: 70%;
 }
 
-.contact a{
+.contact a {
   color: white;
   text-decoration: none;
 }
 
-.socials{
+.socials {
   display: flex;
   justify-content: flex-start;
-  
 }
 
-.social-item{
+.social-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -850,19 +868,133 @@ body {
   height: 25px;
   padding: 5px;
   border-radius: 50%;
-  transition: .3s;
+  transition: 0.3s;
   margin-right: 10px;
 }
 
-.social-item:hover{
+.social-item:hover {
   background: #62008f;
   color: white;
   font-size: 2rem;
 }
 
+*::-webkit-scrollbar {
+  width: 8px; /* Tamaño del scroll en vertical */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+*::-webkit-scrollbar-thumb {
+  background: #62008f;
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: #7200a7;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+*::-webkit-scrollbar-thumb:active {
+  background-color: #8100bc;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+*::-webkit-scrollbar-track {
+  background: #242424;
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+*::-webkit-scrollbar-track:hover,
+*::-webkit-scrollbar-track:active {
+  background: #242424;
+}
+
+.achievements-modal {
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: all 0.5s;
+  z-index: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+  opacity: 0;
+  z-index: -1;
+  transition: opacity z-index 0.6s 0.9s;
+}
+
+.achievements-modal-card {
+  width: 50%;
+  height: 60%;
+  padding: 1.5rem 4rem;
+  /* background: #202020; */
+
+  background: rgba(24, 24, 24, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(91, 0, 143, 0.5);
+
+  border-radius: 25px;
+}
+
+.achievements-modal-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 4rem;
+}
+
+.achievements-modal-card-header-close {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.achievements-modal-card-body {
+  overflow: auto;
+  width: 100%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2rem 2rem;
+  grid-template-areas: ". . .";
+}
+
+.achievements-modal-card-body p {
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.modal-show {
+  /* display: flex; */
+  z-index: 500;
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity z-index 0.6s;
+}
+
+body {
+  transition: 0.3s;
+}
+
 @media (max-height: 720px) {
   .achievements-card-head img {
-    width: 40%;
+    width: 100%;
+  }
+
+  .achievements-card-head {
+    width: 30%;
+  }
+
+  .achievements-card p {
+    font-size: 1rem;
   }
 
   .continue-arrow i {
@@ -881,14 +1013,22 @@ body {
     margin: 1.5rem 0 0rem 0;
   }
 
+  .achievements-modal-card-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0rem 1rem;
+    grid-template-areas: ". . .";
+  }
+
   .achievements-card {
     background: white;
     min-width: 80px;
     min-height: 80px;
     border-radius: 25px;
-    margin: 1rem;
+    margin-bottom: 1rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -912,6 +1052,18 @@ body {
 @media (max-width: 768px) {
   .coverpage-logo {
     width: 20rem;
+  }
+
+  .achievements-card-head img {
+    width: 70%;
+  }
+
+  .achievements-card-head {
+    width: 30%;
+  }
+
+  .achievements-card p{
+    font-size: 1.5rem;
   }
 
   .coverpage-text {
@@ -1063,6 +1215,23 @@ body {
       ".";
   }
 
+  .achievements-modal-card{
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+  }
+
+  .achievements-modal-card-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem 1rem;
+    grid-template-areas:
+      "."
+      "."
+      ".";
+  }
+
   .mobile-hidden {
     display: none;
   }
@@ -1071,18 +1240,22 @@ body {
     font-size: 3rem;
   }
 
-  .contact-left{
+  .contact-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
   }
 
-  .contact-item p{
+  .contact-item p {
     font-size: 2rem;
   }
 
-  .contact-right{
+  .contact-right {
     display: none;
+  }
+
+  .achievements-right-title p {
+    margin: 0;
   }
 }

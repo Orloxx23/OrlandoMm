@@ -89,43 +89,6 @@
   <div class="portfolio section" id="projects">
     <div class="portfolio-left">
       <div class="portfolio-images">
-        <div class="portfolio-img">
-          <img src="./img/Captura3.PNG" alt="" />
-          <div class="img-bottons">
-            <a href="https://github.com/Orloxx23/Votacion-Celo" target="_blank" rel="noopener noreferrer"><i
-                class="fa-brands fa-github"></i></a>
-            <a href="http://votacion-celo.vercel.app/" target="_blank" rel="noopener noreferrer"><i
-                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
-
-        <div class="portfolio-img">
-          <img src="./img/Valorantfa.PNG" alt="" />
-          <div class="img-bottons">
-            <a href="https://github.com/Orloxx23/valorantfa-client" target="_blank" rel="noopener noreferrer"><i
-                class="fa-brands fa-github"></i></a>
-            <a href="https://valorantfa-client.vercel.app" target="_blank" rel="noopener noreferrer"><i
-                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
-
-        <div class="portfolio-img">
-          <img src="./img/todolist.PNG" alt="" />
-          <div class="img-bottons">
-            <a href="https://github.com/Orloxx23/todolist" target="_blank" rel="noopener noreferrer"><i
-                class="fa-brands fa-github"></i></a>
-            <a href="https://orloxx23.github.io/todolist/" target="_blank" rel="noopener noreferrer"><i
-                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
-
-        <div class="portfolio-img off">
-          <img src="./img/CS.png" alt="" />
-          <div class="img-bottons">
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </div>
-        </div>
 
       </div>
     </div>
@@ -191,62 +154,11 @@
       <img src="./img/illustrations/certification.svg" alt="" />
     </div>
     <div class="achievements-right">
-      <h1>Achievements</h1>
+      <div class="achievements-right-title">
+        <p class="achievements-modal-open">See more</p>
+        <h1>Achievements</h1>
+      </div>
       <div class="achievements-collection">
-        <div class="achievements-card">
-          <div class="achievements-card-head">
-            <img src="./img/logo-mision.png" alt="" />
-          </div>
-          <div class="achievements-card-title">
-            <p>Programming skills</p>
-          </div>
-        </div>
-
-        <div class="achievements-card">
-          <div class="achievements-card-head">
-            <img src="./img/logo-mision.png" alt="" />
-          </div>
-          <div class="achievements-card-title">
-            <p>Mobile programming skills</p>
-          </div>
-        </div>
-
-        <div class="achievements-card">
-          <div class="achievements-card-head">
-            <img src="./img/udemy.png" alt="" />
-          </div>
-          <div class="achievements-card-title">
-            <p>UI/UX Design With Figma</p>
-          </div>
-        </div>
-
-        <div class="achievements-card">
-          <div class="achievements-card-head">
-            <img src="./img/platzi.png" alt="" />
-          </div>
-          <div class="achievements-card-title">
-            <p>Introduction to React.js</p>
-          </div>
-        </div> 
-
-        <div class="achievements-card">
-          <div class="achievements-card-head">
-            <img src="./img/OpenBootcamp.jpg" alt="" />
-          </div>
-          <div class="achievements-card-title">
-            <p>Basic HTML and CSS</p>
-          </div>
-        </div> 
-
-        <div class="achievements-card">
-          <div class="achievements-card-head">
-            <img src="./img/udemy.png" alt="" />
-          </div>
-          <div class="achievements-card-title">
-            <p>Responsive development</p>
-          </div>
-        </div> 
-
           <!-- <div class="mobile-hidden">
             <div class="achievements-card-off">
               <div class="achievements-card-head">
@@ -340,9 +252,26 @@
     </div>
   </div>
 
-  <script src="./js/parallax.js"></script>
-  <script src="./js/nav.js"></script>
-  <script src="./js/app.js"></script>
+  <div class="achievements-modal">
+    <div class="achievements-modal-card">
+      <div class="achievements-modal-card-header">
+        <div class="modal-card-header-title">
+          <p>Achievements</p>
+        </div>
+        <div class="achievements-modal-card-header-close">
+          <i class="fa-solid fa-times"></i>
+        </div>
+      </div>
+      <div class="achievements-modal-card-body">
+
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/loadData.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
