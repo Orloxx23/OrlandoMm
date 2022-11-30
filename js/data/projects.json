@@ -22,5 +22,13 @@
     "github": "https://github.com/Orloxx23/todolist",
     "demo": "https://orloxx23.github.io/todolist/",
     "img": "img/todolist.PNG"
+  },
+  {
+    "id": 4,
+    "nombre": "Conflicto armado en colombia",
+    "descripcion": "Humanidades - Semestre IV",
+    "github": "https://github.com/Orloxx23/Conflicto-Colombia",
+    "demo": "https://orloxx23.github.io/Conflicto-Colombia/",
+    "img": "img/Captura2.PNG"
   }
 ]
