@@ -1054,8 +1054,17 @@ body {
     width: 20rem;
   }
 
-  .achievements-card{
+  .achievements-card {
+    background: white;
+    min-width: 80px;
+    min-height: 200px;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
   }
 
   .achievements-card-head img {
