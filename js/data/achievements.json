@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "Programming skills",
+        "img": "img/logo-mision.png"
+    },
+    {
+        "id": 2,
+        "title": "Mobile programming skills",
+        "img": "img/logo-mision.png"
+    },
+    {
+        "id": 3,
+        "title": "UI/UX Design With Figma",
+        "img": "img/udemy.png"
+    },
+    {
+        "id": 4,
+        "title": "Introduction to React.js",
+        "img": "img/platzi.png"
+    },
+    {
+        "id": 5,
+        "title": "Basic HTML and CSS",
+        "img": "img/OpenBootcamp.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Basic JavaScript Course",
+        "img": "img/platzi.png"
+    },
+    {
+        "id": 7,
+        "title": "Responsive development",
+        "img": "img/udemy.png"
+    },
+    {
+        "id": 8,
+        "title": "Git and GitHub Professional Course",
+        "img": "img/platzi.png"
+    },
+    {
+        "id": 9,
+        "title": "React.js and Redux Professional Course",
+        "img": "img/platzi.png"
+    },
+    {
+        "id": 10,
+        "title": "Basic Python Course",
+        "img": "img/platzi.png"
+    },
+    {
+        "id": 11,
+        "title": "CSS Animation Course",
+        "img": "img/platzi.png"
+    },
+    {
+        "id": 12,
+        "title": "Discord Course: Communication for Communities",
+        "img": "img/platzi.png"
+    }
+]

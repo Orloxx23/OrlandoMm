@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nombre": "Votacion web3",
+    "descripcion": "Platzi - CELO Solidity Developer Program.",
+    "github": "https://github.com/Orloxx23/Votacion-Celo",
+    "demo": "https://votacion-celo.vercel.app",
+    "img": "img/Captura3.PNG"
+  },
+  {
+    "id": 2,
+    "nombre": "Valorant for all",
+    "descripcion": "Recopilación de videos para mejorar en valorant.",
+    "github": "https://github.com/Orloxx23/valorantfa-client",
+    "demo": "https://valorantfa-client.vercel.app",
+    "img": "img/Valorantfa.PNG"
+  },
+  {
+    "id": 3,
+    "nombre": "Lista de tareas",
+    "descripcion": "Curso de Introducción a React.js - Platzi.",
+    "github": "https://github.com/Orloxx23/todolist",
+    "demo": "https://orloxx23.github.io/todolist/",
+    "img": "img/todolist.PNG"
+  }
+]
