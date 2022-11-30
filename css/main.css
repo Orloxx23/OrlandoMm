@@ -1054,12 +1054,16 @@ body {
     width: 20rem;
   }
 
+  .achievements-card{
+    flex-direction: column;
+  }
+
   .achievements-card-head img {
-    width: 70%;
+    width: 50%;
   }
 
   .achievements-card-head {
-    width: 30%;
+    width: auto;
   }
 
   .achievements-card p{
