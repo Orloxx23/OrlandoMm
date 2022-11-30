@@ -1,164 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="theme-color"
+      content="#62008F"
+      media="(prefers-color-scheme: dark)"
+    />
+    <meta
+      name="theme-color"
+      content="#62008F"
+      media="(prefers-color-scheme: light)"
+    />
+    <!-- <link rel="icon" type="image/x-icon" href="./img/favicon.ico"> -->
+    <title>Orlando Mina</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/figures.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="./css/grid.css" />
+    <link rel="stylesheet" href="./css/timeline.css" />
+    <script
+      src="https://kit.fontawesome.com/00a734f883.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400;500;600;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#62008F" media="(prefers-color-scheme: dark)" />
-  <meta name="theme-color" content="#62008F" media="(prefers-color-scheme: light)" />
-  <!-- <link rel="icon" type="image/x-icon" href="./img/favicon.ico"> -->
-  <title>Orlando Mina</title>
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./css/figures.css" />
-  <link rel="stylesheet" href="./css/animations.css" />
-  <link rel="stylesheet" href="./css/grid.css" />
-  <link rel="stylesheet" href="./css/timeline.css" />
-  <script src="https://kit.fontawesome.com/00a734f883.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400;500;600;700&family=Great+Vibes&display=swap"
-    rel="stylesheet" />
-</head>
+  <body>
+    <div class="nav">
+      <a href="#home" class="hvr-bob active tab"
+        ><i class="fa-solid fa-house"></i
+      ></a>
 
-<body>
-  <div class="nav">
-    <a href="#home" class="hvr-bob active tab"><i class="fa-solid fa-house"></i></a>
+      <a href="#projects" class="hvr-bob tab"
+        ><i class="fa-solid fa-suitcase"></i
+      ></a>
 
-    <a href="#projects" class="hvr-bob tab"><i class="fa-solid fa-suitcase"></i></a>
+      <a href="#education" class="hvr-bob tab"
+        ><i class="fa-solid fa-graduation-cap"></i
+      ></a>
 
-    <a href="#education" class="hvr-bob tab"><i class="fa-solid fa-graduation-cap"></i></a>
+      <!-- <a href="#skills" class="hvr-bob tab"><i class="fa-solid fa-brain"></i></a> -->
 
-    <!-- <a href="#skills" class="hvr-bob tab"><i class="fa-solid fa-brain"></i></a> -->
+      <a href="#contact" class="hvr-bob tab"
+        ><i class="fa-solid fa-address-card"></i
+      ></a>
+    </div>
 
-    <a href="#contact" class="hvr-bob tab"><i class="fa-solid fa-address-card"></i></a>
-  </div>
+    <div class="nav-mobile-button">
+      <i class="fa-solid fa-bars"></i>
+    </div>
 
-  <div class="nav-mobile-button">
-    <i class="fa-solid fa-bars"></i>
-  </div>
-
-  <div class="nav-mobile">
-    <i class="fa-solid fa-xmark close-nav"></i>
-    <div class="nav-items">
-      <div class="item">
-        <a href="#home" class="mobile-tab"><i class="fa-solid fa-house"></i></a>
-        <p>HOME</p>
-      </div>
-      <div class="item">
-        <a href="#projects" class="mobile-tab"><i class="fa-solid fa-suitcase"></i></a>
-        <p>PROJECTS</p>
-      </div>
-      <div class="item">
-        <a href="#education" class="mobile-tab"><i class="fa-solid fa-graduation-cap"></i></a>
-        <p>EDUCATION</p>
-      </div>
-      <!-- <div class="item">
+    <div class="nav-mobile">
+      <i class="fa-solid fa-xmark close-nav"></i>
+      <div class="nav-items">
+        <div class="item">
+          <a href="#home" class="mobile-tab"
+            ><i class="fa-solid fa-house"></i
+          ></a>
+          <p>HOME</p>
+        </div>
+        <div class="item">
+          <a href="#projects" class="mobile-tab"
+            ><i class="fa-solid fa-suitcase"></i
+          ></a>
+          <p>PROJECTS</p>
+        </div>
+        <div class="item">
+          <a href="#education" class="mobile-tab"
+            ><i class="fa-solid fa-graduation-cap"></i
+          ></a>
+          <p>EDUCATION</p>
+        </div>
+        <!-- <div class="item">
         <a href="#skills" class="mobile-tab"><i class="fa-solid fa-brain"></i></a>
         <p>SKILLS</p>
       </div> -->
-      <div class="item">
-        <a href="#contact" class="mobile-tab"><i class="fa-solid fa-address-card"></i></a>
-        <p>CONTACT</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="overlay hidden"></div>
-
-  <div class="coverpage parallax section" id="home">
-    <div class="particles-js" id="particles-js"></div>
-    <div class="circle-bg" id="main-layer"></div>
-    <div class="circle1" id="layer"></div>
-    <div class="circle2" id="layer"></div>
-    <div class="square" id="layer"></div>
-    <div class="triangle" id="layer"></div>
-    <img src="./img/line.png" alt="line" class="coverpage-line" id="layer" />
-    <div class="z1" data-aos="zoom-in" data-aos-anchor-placement="top-center">
-      <img src="./img/me/me1.png" alt="OrlandoMm" class="coverpage-logo" id="main-layer" />
-    </div>
-    <div class="coverpage-text">
-      <h1>OrlandoMm</h1>
-      <h3>Frontend developer</h3>
-    </div>
-  </div>
-
-  <div class="portfolio section" id="projects">
-    <div class="portfolio-left">
-      <div class="portfolio-images">
-
-      </div>
-    </div>
-    <div class="portfolio-right">
-      <h1>Projects</h1>
-      <!-- <img src="./img/hand-up.png" alt="" /> -->
-    </div>
-
-    <div class="separation">
-      <hr />
-    </div>
-  </div>
-
-  <div class="education section" id="education">
-    <div class="education-left">
-      <h1>Education</h1>
-
-      <div class="education-card-off">
-        <div class="education-card-icon-off">
-          <i class="fa-solid fa-graduation-cap"></i>
-        </div>
-        <div class="education-card-body-off">
-          <div class="education-date">
-            <div class="date-box"></div>
-          </div>
-          <div class="education-title">
-            <div class="title-box"></div>
-          </div>
-          <div class="education-school">
-            <div class="school-box"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="education-card">
-        <div class="education-card-icon">
-          <i class="fa-solid fa-graduation-cap"></i>
-        </div>
-        <div class="education-card-body">
-          <div class="education-date">
-            <p>2020 - Present</p>
-          </div>
-          <div class="education-title">
-            <p>Systems engineer</p>
-          </div>
-          <div class="education-school">
-            <p>Institución Universitaria Antonio José Camacho</p>
-          </div>
+        <div class="item">
+          <a href="#contact" class="mobile-tab"
+            ><i class="fa-solid fa-address-card"></i
+          ></a>
+          <p>CONTACT</p>
         </div>
       </div>
     </div>
-    <div class="education-right">
-      <img src="./img/illustrations/education.svg" alt="" />
-    </div>
-  </div>
 
-  <div class="continue-arrow">
-    <a href="#achievements"><i class="fa-solid fa-angles-down"></i></a>
-  </div>
+    <div class="overlay hidden"></div>
 
-  <div class="achievements section" id="achievements">
-    <div class="achievements-left">
-      <img src="./img/illustrations/certification.svg" alt="" />
-    </div>
-    <div class="achievements-right">
-      <div class="achievements-right-title">
-        <p class="achievements-modal-open">See more</p>
-        <h1>Achievements</h1>
+    <div class="coverpage parallax section" id="home">
+      <div class="particles-js" id="particles-js"></div>
+      <div class="circle-bg" id="main-layer"></div>
+      <div class="circle1" id="layer"></div>
+      <div class="circle2" id="layer"></div>
+      <div class="square" id="layer"></div>
+      <div class="triangle" id="layer"></div>
+      <img src="./img/line.png" alt="line" class="coverpage-line" id="layer" />
+      <div class="z1" data-aos="zoom-in" data-aos-anchor-placement="top-center">
+        <img
+          src="./img/me/me1.png"
+          alt="OrlandoMm"
+          class="coverpage-logo"
+          id="main-layer"
+        />
       </div>
-      <div class="achievements-collection">
+      <div class="coverpage-text">
+        <h1>OrlandoMm</h1>
+        <h3>Frontend developer</h3>
+      </div>
+    </div>
+
+    <div class="portfolio section" id="projects">
+      <div class="portfolio-left">
+        <div class="portfolio-images"></div>
+      </div>
+      <div class="portfolio-right">
+        <h1>Projects</h1>
+        <!-- <img src="./img/hand-up.png" alt="" /> -->
+      </div>
+
+      <div class="separation">
+        <hr />
+      </div>
+    </div>
+
+    <div class="education section" id="education">
+      <div class="education-left">
+        <h1>Education</h1>
+
+        <div class="education-card-off">
+          <div class="education-card-icon-off">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="education-card-body-off">
+            <div class="education-date">
+              <div class="date-box"></div>
+            </div>
+            <div class="education-title">
+              <div class="title-box"></div>
+            </div>
+            <div class="education-school">
+              <div class="school-box"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="education-card">
+          <div class="education-card-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="education-card-body">
+            <div class="education-date">
+              <p>2020 - Present</p>
+            </div>
+            <div class="education-title">
+              <p>Systems engineer</p>
+            </div>
+            <div class="education-school">
+              <p>Institución Universitaria Antonio José Camacho</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="education-right">
+        <img src="./img/illustrations/education.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="continue-arrow">
+      <a href="#achievements"><i class="fa-solid fa-angles-down"></i></a>
+    </div>
+
+    <div class="achievements section" id="achievements">
+      <div class="achievements-left">
+        <img src="./img/illustrations/certification.svg" alt="" />
+      </div>
+      <div class="achievements-right">
+        <div class="achievements-right-title">
+          <p class="achievements-modal-open">See more</p>
+          <h1>Achievements</h1>
+        </div>
+        <div class="achievements-collection">
+          <!-- Load from loadData.js -->
+
           <!-- <div class="mobile-hidden">
             <div class="achievements-card-off">
               <div class="achievements-card-head">
@@ -169,13 +207,27 @@
               </div>
             </div>
           </div> -->
-
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- <div class="skills section" id="skills">
+    <div class="achievements-modal">
+      <div class="achievements-modal-card">
+        <div class="achievements-modal-card-header">
+          <div class="modal-card-header-title">
+            <p>Achievements</p>
+          </div>
+          <div class="achievements-modal-card-header-close">
+            <i class="fa-solid fa-times"></i>
+          </div>
+        </div>
+        <div class="achievements-modal-card-body">
+          <!-- Load from loadData.js -->
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="skills section" id="skills">
     <h1>Skills</h1>
     
     <div class="skills-collection">
@@ -210,9 +262,9 @@
     </div>
   </div> -->
 
-  <div class="contact section" id="contact">
-    <div class="contact-left">
-      <h1>Contact</h1>
+    <div class="contact section" id="contact">
+      <div class="contact-left">
+        <h1>Contact</h1>
         <div class="contact-item">
           <a href="mailto:orminamadro@gmail.com">
             <div class="contact-item-icon">
@@ -234,44 +286,34 @@
           </a>
         </div> -->
         <div class="socials">
-          <a href="https://github.com/Orloxx23" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/Orloxx23"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div class="social-item">
               <i class="fa-brands fa-github"></i>
             </div>
           </a>
-          <a href="https://www.linkedin.com/in/orlandomm/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/orlandomm/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div class="social-item">
               <i class="fa-brands fa-linkedin-in"></i>
             </div>
           </a>
         </div>
-      
-    </div>
-    <div class="contact-right">
-      <img src="./img/illustrations/contact.svg" alt="">
-    </div>
-  </div>
-
-  <div class="achievements-modal">
-    <div class="achievements-modal-card">
-      <div class="achievements-modal-card-header">
-        <div class="modal-card-header-title">
-          <p>Achievements</p>
-        </div>
-        <div class="achievements-modal-card-header-close">
-          <i class="fa-solid fa-times"></i>
-        </div>
       </div>
-      <div class="achievements-modal-card-body">
-
+      <div class="contact-right">
+        <img src="./img/illustrations/contact.svg" alt="" />
       </div>
     </div>
-  </div>
 
-  <script type="module" src="js/loadData.js"></script>
-  <script src="js/parallax.js"></script>
-  <script src="js/nav.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+    <script type="module" src="js/loadData.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
