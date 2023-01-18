@@ -30,5 +30,13 @@
     "github": "https://github.com/Orloxx23/Conflicto-Colombia",
     "demo": "https://orloxx23.github.io/Conflicto-Colombia/",
     "img": "img/Captura2.PNG"
+  },
+  {
+    "id": 5,
+    "nombre": "Obtener pokedex",
+    "descripcion": "Pagina de presentacion de mi aplicacion de pokedex.",
+    "github": "https://github.com/Orloxx23/get-pokedex",
+    "demo": "https://orloxx23.github.io/get-pokedex",
+    "img": "img/Captura5.PNG"
   }
 ]
