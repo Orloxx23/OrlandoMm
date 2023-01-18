@@ -23,3 +23,10 @@ function bloquearScroll() {
 function desbloquearScroll() {
   document.body.style.overflow = "auto";
 }
+
+const footerMessageClose = document.querySelector(".footer-message-close-button");
+const footerMessage = document.querySelector(".footer-message");
+
+footerMessageClose.addEventListener("click", () => {
+  footerMessage.classList.add("footer-message-close");
+});

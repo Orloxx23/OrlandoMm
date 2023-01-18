@@ -984,6 +984,75 @@ body {
   transition: 0.3s;
 }
 
+.footer-message {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  max-width: 100%;
+  min-height: 5vh;
+  background: #303030;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  transition: .5s;
+  animation: show-footer-message 0.5s ease-in-out;
+}
+
+.footer-message-left {
+  color: white;
+  font-size: 2rem;
+}
+
+.footer-message-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-message-link{
+  color: #303030;
+  font-weight: 700;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: .125rem 1.25rem;
+  width: 4.6875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 1.25rem;
+  transition: .3s;
+}
+
+.footer-message-link:hover{
+ letter-spacing: .4688rem;
+}
+
+.footer-message-close-button {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 2.5rem;
+  margin-left: 20px;
+}
+
+.footer-message-close{
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+@keyframes show-footer-message {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 @media (max-height: 720px) {
   .achievements-card-head img {
     width: 100%;
@@ -1075,7 +1144,7 @@ body {
     width: auto;
   }
 
-  .achievements-card p{
+  .achievements-card p {
     font-size: 1.5rem;
   }
 
@@ -1228,7 +1297,7 @@ body {
       ".";
   }
 
-  .achievements-modal-card{
+  .achievements-modal-card {
     padding: 20px;
     width: 80%;
     height: 80%;
