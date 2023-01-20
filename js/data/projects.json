@@ -38,5 +38,13 @@
     "github": "https://github.com/Orloxx23/get-pokedex",
     "demo": "https://orloxx23.github.io/get-pokedex",
     "img": "img/Captura5.PNG"
+  },
+  {
+    "id": 6,
+    "nombre": "Platzi Travel",
+    "descripcion": "Pagina de hospedajes en todo el mundo.",
+    "github": "https://github.com/Orloxx23/PlatziTravel",
+    "demo": "https://orloxx23.github.io/PlatziTravel/",
+    "img": "img/Captura6.PNG"
   }
 ]
