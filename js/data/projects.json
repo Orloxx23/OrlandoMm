@@ -1,22 +1,14 @@
 [
   {
     "id": 1,
-    "nombre": "Votacion web3",
-    "descripcion": "Platzi - CELO Solidity Developer Program.",
-    "github": "https://github.com/Orloxx23/Votacion-Celo",
-    "demo": "https://votacion-celo.vercel.app",
-    "img": "img/Captura3.PNG"
+    "nombre": "Taply",
+    "descripcion": "Controla valorant con tu celular.",
+    "github": "https://github.com/Orloxx23/",
+    "demo": "https://orloxx23.github.io/Taply-page/",
+    "img": "img/taply.PNG"
   },
   {
     "id": 2,
-    "nombre": "Valorant for all",
-    "descripcion": "Recopilación de videos para mejorar en valorant.",
-    "github": "https://github.com/Orloxx23/valorantfa-client",
-    "demo": "https://valorantfa-client.vercel.app",
-    "img": "img/Valorantfa.PNG"
-  },
-  {
-    "id": 3,
     "nombre": "Lista de tareas",
     "descripcion": "Curso de Introducción a React.js - Platzi.",
     "github": "https://github.com/Orloxx23/todolist",
@@ -24,27 +16,35 @@
     "img": "img/todolist.PNG"
   },
   {
+    "id": 3,
+    "nombre": "Fusion eSports",
+    "descripcion": "Recopilación de videos para mejorar en valorant.",
+    "github": "https://github.com/Orloxx23/fusionesports",
+    "demo": "https://fusiongg.vercel.app",
+    "img": "img/fusion.png"
+  },
+  {
     "id": 4,
+    "nombre": "Valorant Stats",
+    "descripcion": "Estadísticas de valorant.",
+    "github": "https://github.com/Orloxx23/vlrstats",
+    "demo": "https://vlrstats.vercel.app/",
+    "img": "img/Captura7.PNG"
+  },
+  {
+    "id": 5,
+    "nombre": "Valorant for all",
+    "descripcion": "Recopilación de videos para mejorar en valorant.",
+    "github": "https://github.com/Orloxx23/valorantfa-client",
+    "demo": "https://valorantfa-client.vercel.app",
+    "img": "img/Valorantfa.PNG"
+  },
+  {
+    "id": 6,
     "nombre": "Conflicto armado en colombia",
     "descripcion": "Humanidades - Semestre IV",
     "github": "https://github.com/Orloxx23/Conflicto-Colombia",
     "demo": "https://orloxx23.github.io/Conflicto-Colombia/",
     "img": "img/Captura2.PNG"
-  },
-  {
-    "id": 5,
-    "nombre": "Obtener pokedex",
-    "descripcion": "Pagina de presentacion de mi aplicacion de pokedex.",
-    "github": "https://github.com/Orloxx23/get-pokedex",
-    "demo": "https://orloxx23.github.io/get-pokedex",
-    "img": "img/Captura5.PNG"
-  },
-  {
-    "id": 6,
-    "nombre": "Platzi Travel",
-    "descripcion": "Pagina de hospedajes en todo el mundo.",
-    "github": "https://github.com/Orloxx23/PlatziTravel",
-    "demo": "https://orloxx23.github.io/PlatziTravel/",
-    "img": "img/Captura6.PNG"
   }
 ]
